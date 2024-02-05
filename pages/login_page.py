@@ -1,11 +1,11 @@
-from locators import LoginPageLocators
-from base_page import BasePage
+from pages.locators import LoginPageLocators
+from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
-        self.url = "https://www.example.com/login"
+        self.url = "http://cbdev-ez/#/portal/dashboard/dashboard"
 
     def login(self, username, password):
         self.open(self.url)

@@ -2,6 +2,6 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators:
-    USERNAME_FIELD = (By.ID, "username")
-    PASSWORD_FIELD = (By.ID, "password")
-    LOGIN_BUTTON = (By.ID, "login-button")
+    USERNAME_FIELD = (By.CSS_SELECTOR, "#username")
+    PASSWORD_FIELD = (By.CSS_SELECTOR, "#password")
+    LOGIN_BUTTON = (By.CSS_SELECTOR, "[type='submit']")
