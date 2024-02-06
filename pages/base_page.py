@@ -3,6 +3,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
+
+    ezdoc_url = "http://192.168.31.14:30080/"
+
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 10)  # Устанавливаем время ожидания в 10 секунд
