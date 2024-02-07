@@ -16,11 +16,11 @@ def pytest_addoption(parser):
 def browser():
     options = OptionsChrome()
     options.add_argument("start-maximized")
-    browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
-                               options=options)
-    yield browser
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
+                              options=options)
+    yield driver
     print("\nquit browser..")
-    browser.quit()
+    driver.quit()
 
 
 @pytest.fixture(scope="function")
