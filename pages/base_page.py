@@ -5,6 +5,7 @@ from conftest import stand
 
 class BasePage:
     stand = "dev"
+
     if stand == "test":
         ezdoc_url = "http://192.168.31.14:30080/"
     elif stand == "dev":

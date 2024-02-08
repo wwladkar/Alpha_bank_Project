@@ -12,6 +12,11 @@ def pytest_addoption(parser):
                      help="Choose stand: '--stand=test' or '--stand=dev'")
 
 
+def stand(request):
+    stand_name = request.config.getoption("stand")
+    return stand_name
+
+
 @pytest.fixture(scope="function")
 def browser():
     options = OptionsChrome()
@@ -21,9 +26,3 @@ def browser():
     yield driver
     print("\nquit browser..")
     driver.quit()
-
-
-@pytest.fixture(scope="function")
-def stand(request):
-    stand = request.config.getoption("stand")
-    return stand

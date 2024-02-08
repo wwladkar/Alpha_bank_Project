@@ -8,10 +8,7 @@ class LoginPage(BasePage):
         super().__init__(driver)
         self.url = f"{BasePage.ezdoc_url}#/portal/dashboard/dashboard"
 
-    def login(self, username, password, login_page_locators=None):
-
-        stand = "dev"
-
+    def login(self, username, password, stand="dev", login_page_locators=None):
         if stand == "test":
             login_page_locators = TestLoginPageLocators
         elif stand == "dev":
