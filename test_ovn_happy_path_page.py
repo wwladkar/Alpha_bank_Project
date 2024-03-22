@@ -7,7 +7,7 @@ from pages.swift_page import SwiftPage
 
 def test_ovn_happy_path(browser):
     login_page = LoginPage(browser)
-    login_page.login("VKarpushkin", "********")
+    login_page.login("********", "********")
 
     assert browser.current_url == f" {LoginPage.ezdoc_url} #/" or f"{LoginPage.ezdoc_url}#/portal/dashboard/dashboard"
 
