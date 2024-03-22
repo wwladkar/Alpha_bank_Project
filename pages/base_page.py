@@ -7,9 +7,9 @@ class BasePage:
     stand = "dev"
 
     if stand == "test":
-        ezdoc_url = "http://192.168.31.14:30080/"
+        ezdoc_url = "http://192.168.00.00:00000/"
     elif stand == "dev":
-        ezdoc_url = "http://cbdev-ez/"
+        ezdoc_url = "http://xxxxx-xx/"
 
     def __init__(self, driver):
         self.driver = driver
