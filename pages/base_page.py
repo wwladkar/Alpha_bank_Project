@@ -1,10 +1,15 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from conftest import stand
 
 
 class BasePage:
+    stand = "dev"
 
-    sber_url = "http://www.sberbank.ru"
+    if stand == "test":
+        ezdoc_url = "http://192.168.31.14:30080/"
+    elif stand == "dev":
+        ezdoc_url = "http://cbdev-ez/"
 
     def __init__(self, driver):
         self.driver = driver
