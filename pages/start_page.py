@@ -19,3 +19,15 @@ class StartPage(BasePage):
     def click_s_m_business_button(self):
         self.open(self.url)
         self.click_element(StartPageLocators.S_M_BUSINESS_BUTTON)
+
+    def click_currencies_button(self):
+        self.open(self.url)
+        self.click_element(StartPageLocators.CURRENCIES_BUTTON)
+
+    def click_offices_button(self):
+        self.open(self.url)
+        self.click_element(StartPageLocators.OFFICES_BUTTON)
+
+    def click_atms_button(self):
+        self.open(self.url)
+        self.click_element(StartPageLocators.ATMS_BUTTON)
