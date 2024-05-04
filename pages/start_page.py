@@ -12,9 +12,9 @@ class StartPage(BasePage):
         self.open(self.url)
         self.click_element(StartPageLocators.PERSON_BUTTON)
 
-    def click_selfbusy_button(self):
+    def click_self_employed_button(self):
         self.open(self.url)
-        self.click_element(StartPageLocators.SELFBUSY_BUTTON)
+        self.click_element(StartPageLocators.SELF_EMPLOYED_BUTTON)
 
     def click_s_m_business_button(self):
         self.open(self.url)
