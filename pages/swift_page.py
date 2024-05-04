@@ -6,7 +6,7 @@ class SwiftPage(BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self.url = f"{BasePage.ezdoc_url}#/portal/swift/list/all"
+        self.url = f"{BasePage.sber_url}#/portal/swift/list/all"
 
     def swift(self, stand="dev"):
         # if stand == "test":

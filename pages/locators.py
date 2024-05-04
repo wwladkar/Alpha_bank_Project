@@ -1,10 +1,9 @@
 from selenium.webdriver.common.by import By
 
 
-class DevLoginPageLocators:
-    USERNAME_FIELD = (By.CSS_SELECTOR, "#username")
-    PASSWORD_FIELD = (By.CSS_SELECTOR, "#password")
-    LOGIN_BUTTON = (By.CSS_SELECTOR, "[type='submit']")
+class StartPageLocators:
+    PERSON_BUTTON = (By.CSS_SELECTOR, "[data-cga_click_segment='Частным клиентам']")
+    SELFBUSY_BUTTON = (By.CSS_SELECTOR, "[aria-label] .kitt-header-sections__item_first:nth-of-type(2) [href]")
 
 
 class TestLoginPageLocators:
