@@ -41,13 +41,14 @@ def browser(request):
                                     options=options_firefox)
     elif browser_name == "yandex":
         print("\nstart Yandex browser for test..")
-        yandex_path = r"C:\Users\User\Downloads\yandexdriver-24.4.1.918-linux\yandexdriver"  # path to YandexDriver
-        yandex_options = webdriver.ChromeOptions()
+        yandex_path = r"C:\Users\User\Downloads\yandexdriver-24.1.0.2570-win64\yandexdriver.exe"  # path to YandexDriver
+        yandex_options = OptionsChrome()
         yandex_options.binary_location = yandex_path
         yandex_options.add_argument("start-maximized")
         yandex_options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
         browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
                                    options=yandex_options)
+
     else:
         raise pytest.UsageError("--browser_name should be chrome, firefox, or yandex")
     yield browser
