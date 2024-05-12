@@ -8,18 +8,18 @@ def test_click_person_button(browser):
     assert browser.current_url == "https://alfabank.ru/"
 
 
-#def test_click_self_employed_button(browser):
-#    start_page = StartPage(browser)
-#    start_page.click_self_employed_button()
+def test_click_s_m_business_button(browser):
+    start_page = StartPage(browser)
+    start_page.click_s_m_business_button()
 
-#    assert browser.current_url == "https://www.sberbank.com/ru/svoedelo/start"
+    assert browser.current_url == "https://alfabank.ru/sme/"
 
 
-#def test_click_s_m_business_button(browser):
-#    start_page = StartPage(browser)
-#    start_page.click_s_m_business_button()
+def test_click_for_corporations_button(browser):
+    start_page = StartPage(browser)
+    start_page.click_for_corporations_button()
 
-#    assert browser.current_url == "https://www.sberbank.com/ru/s_m_business"
+    assert browser.current_url == "https://alfabank.ru/corporate/"
 
 
 #def test_click_currencies_button(browser):
