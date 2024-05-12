@@ -3,7 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
-    sber_url = 'http://www.sberbank.ru'
+    alpha_url = 'https://alfabank.ru/'
 
     def __init__(self, driver):
         self.driver = driver

@@ -6,7 +6,7 @@ class StartPage(BasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self.url = BasePage.sber_url
+        self.url = BasePage.alpha_url
 
     def click_person_button(self):
         self.open(self.url)

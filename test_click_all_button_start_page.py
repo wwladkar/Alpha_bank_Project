@@ -5,7 +5,7 @@ def test_click_person_button(browser):
     start_page = StartPage(browser)
     start_page.click_person_button()
 
-    assert browser.current_url == "https://www.sberbank.ru/ru/person"
+    assert browser.current_url == "https://alfabank.ru/"
 
 
 #def test_click_self_employed_button(browser):

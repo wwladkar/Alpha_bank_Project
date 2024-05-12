@@ -8,11 +8,10 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
 
-
 def pytest_addoption(parser):
     parser.addoption('--browser_name',
                      action='store',
-                     default='yandex',
+                     default='chrome',
                      help='Choose browser: \'--browser_name=chrome\' or \'--browser_name=firefox\' or '
                           '\'--browser_name=yandex\'')
     parser.addoption('--language',
