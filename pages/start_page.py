@@ -20,14 +20,14 @@ class StartPage(BasePage):
         self.open(self.url)
         self.click_element(StartPageLocators.FOR_CORPORATIONS_BUTTON)
 
-    def click_currencies_button(self):
+    def click_for_financial_button(self):
         self.open(self.url)
-        self.click_element(StartPageLocators.CURRENCIES_BUTTON)
+        self.click_element(StartPageLocators.FOR_FINANCIAL_BUTTON)
 
-    def click_offices_button(self):
+    def click_more_button(self):
         self.open(self.url)
-        self.click_element(StartPageLocators.OFFICES_BUTTON)
+        self.click_element(StartPageLocators.MORE_BUTTON)
 
-    def click_atms_button(self):
+    def click_alpha_club_button(self):
         self.open(self.url)
-        self.click_element(StartPageLocators.ATMS_BUTTON)
+        self.click_element(StartPageLocators.ALPHA_CLUB_BUTTON)

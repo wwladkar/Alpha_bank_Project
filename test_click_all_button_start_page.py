@@ -22,18 +22,19 @@ def test_click_for_corporations_button(browser):
     assert browser.current_url == "https://alfabank.ru/corporate/"
 
 
-#def test_click_currencies_button(browser):
-#    start_page = StartPage(browser)
-#    start_page.click_currencies_button()
+def test_click_for_financial_button(browser):
+    start_page = StartPage(browser)
+    start_page.click_for_financial_button()
 
-#    assert browser.current_url == "https://www.sberbank.ru/ru/quotes/currencies"
+    assert browser.current_url == "https://alfabank.ru/financial/"
 
 
-#def test_click_offices_button(browser):
-#    start_page = StartPage(browser)
-#    start_page.click_offices_button()
+def test_click_alpha_club_button(browser):
+    start_page = StartPage(browser)
+    start_page.click_more_button()
+    start_page.click_alpha_club_button()
 
-#    assert browser.current_url == "https://www.sberbank.com/ru/oib?tab=vsp"
+    assert browser.current_url == "https://alfabank.ru/a-club/"
 
 
 #def test_click_atms_button(browser):
