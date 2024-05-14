@@ -30,4 +30,4 @@ class StartPage(BasePage):
 
     def click_alpha_club_button(self):
         self.open(self.url)
-        self.click_element(StartPageLocators.ALPHA_CLUB_BUTTON)
+        self.hover_and_click_element(StartPageLocators.ALPHA_CLUB_BUTTON)
