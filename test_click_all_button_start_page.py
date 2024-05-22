@@ -31,6 +31,7 @@ from pages.start_page import StartPage
 
 def test_click_alpha_club_button(browser):
     start_page = StartPage(browser)
+    start_page.open_browser()
     start_page.click_more_button()
     start_page.click_alpha_club_button()
 

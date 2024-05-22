@@ -32,3 +32,8 @@ class BasePage:
     def enter_text(self, locator, text):
         element = self.find_element(locator)
         element.send_keys(text)
+
+    def get_tooltip_text(self, locator):
+        element = self.find_element(locator)
+        tooltip_text = element.get_attribute("title")
+        return tooltip_text
