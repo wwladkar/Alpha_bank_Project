@@ -10,4 +10,6 @@ class StartPageLocators:
     ALPHA_CLUB_BUTTON = (By.CSS_SELECTOR, "a[title='А-КЛУБ']")
 
 
+class LoginPageLocators:
+    LOGIN_BUTTON = (By.CSS_SELECTOR, "a[title='Частным лицам']")
 
