@@ -11,6 +11,6 @@ class LoginPage(BasePage):
     def open_browser(self):
         self.open(self.url)
 
-    def click_person_button(self):
+    def login(self):
         self.click_element(LoginPageLocators.LOGIN_BUTTON)
 
